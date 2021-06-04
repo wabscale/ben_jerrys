@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div align="center">
+    <div class="col-sm-4" align="center">
+        <div class="well imgbox">
+            <form method="post" enctype=multipart/form-data action="#">
+                <p>
+                    Flavor Name: <input type="text" name="flavorname">
+                </p>
+                <p>
+                    Nutritional Image (.jpeg only)<input type="file" name="nutritional_img">
+                </p>
+                <p>
+                    Flavor Tag Image (.jpeg only)<input type="file" name="tag_img">
+                </p>
+                <p> Flavor Types:
+                    {% for i in flavortypes %}
+                    <input type="checkbox" name="{{i}}">{{i}}
+                    {% endfor %}
+                </p>
+                <p> Allergy Types:
+                    {% for i in allergylist %}
+                     <input type="checkbox" name="{{i}}">{{i}}
+                    {% endfor %}
+                </p>
+                <p>
+                    <input type="submit" style="color: black">
+                </p>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

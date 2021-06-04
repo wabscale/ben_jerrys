@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="16G29" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="All" representedClassName="All" parentEntity="BaseFlavorEntity" syncable="YES" codeGenerationType="class"/>
+    <entity name="Allergy" representedClassName="Allergy" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="BaseFlavorEntity" representedClassName="BaseFlavorEntity" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="info" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tag" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Catering" representedClassName="Catering" parentEntity="BaseFlavorEntity" syncable="YES" codeGenerationType="class"/>
+    <entity name="Data_Source_Data" representedClassName="Data_Source_Data" syncable="YES" codeGenerationType="class">
+        <attribute name="host" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="FlavorData" representedClassName="FlavorData" syncable="YES" codeGenerationType="class">
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Gluten" representedClassName="Gluten" syncable="YES" codeGenerationType="class">
+        <attribute name="info" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <entity name="Vegan" representedClassName="Vegan" syncable="YES" codeGenerationType="class">
+        <attribute name="info" optional="YES" attributeType="Binary" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="All" positionX="-387" positionY="54" width="128" height="45"/>
+        <element name="Allergy" positionX="-225" positionY="-303" width="128" height="60"/>
+        <element name="BaseFlavorEntity" positionX="-306" positionY="-126" width="128" height="90"/>
+        <element name="Catering" positionX="-218" positionY="54" width="128" height="45"/>
+        <element name="Data_Source_Data" positionX="-54" positionY="-153" width="128" height="60"/>
+        <element name="FlavorData" positionX="133" positionY="-153" width="128" height="60"/>
+        <element name="Gluten" positionX="133" positionY="-297" width="128" height="60"/>
+        <element name="Vegan" positionX="-47" positionY="-294" width="128" height="60"/>
+    </elements>
+</model>

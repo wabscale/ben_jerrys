@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4905C5141DFCA98A00AB387F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905C5081DFCA98A00AB387F /* AppDelegate.swift */; };
+		4905C5171DFCA98A00AB387F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4905C50B1DFCA98A00AB387F /* ContentViewController.swift */; };
+		4905C5351DFCA9A500AB387F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4905C5331DFCA9A500AB387F /* Main.storyboard */; };
+		4905C53B1DFCA9BD00AB387F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4905C5371DFCA9BD00AB387F /* LaunchScreen.storyboard */; };
+		4905C53E1DFCA9E900AB387F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4905C53D1DFCA9E900AB387F /* Assets.xcassets */; };
+		4905C5D01DFCAD9600AB387F /* CAKE ORDER FORM.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4905C5761DFCAD9600AB387F /* CAKE ORDER FORM.jpg */; };
+		4905C5D11DFCAD9600AB387F /* CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = 4905C5771DFCAD9600AB387F /* CheckMark.png */; };
+		4905C5F71DFCAD9600AB387F /* List Not Complete.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4905C59E1DFCAD9600AB387F /* List Not Complete.jpeg */; };
+		CD35B7B01F08830D00A04D35 /* FlavorTagTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35B7AF1F08830D00A04D35 /* FlavorTagTVC.swift */; };
+		CD35B7B21F088A7500A04D35 /* FlavorsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD35B7B11F088A7500A04D35 /* FlavorsTVC.swift */; };
+		CD40470B1F0B0D9C004DAA9D /* ProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40470A1F0B0D9C004DAA9D /* ProgressVC.swift */; };
+		CD4A83F71F0C3E3900AE9DA4 /* AllergyTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A83F61F0C3E3900AE9DA4 /* AllergyTVC.swift */; };
+		CD4A83FB1F0D5FEC00AE9DA4 /* CateringTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A83FA1F0D5FEC00AE9DA4 /* CateringTVC.swift */; };
+		CD4A83FD1F0D615300AE9DA4 /* CateringEditTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A83FC1F0D615300AE9DA4 /* CateringEditTVC.swift */; };
+		CD4A84011F15EBF000AE9DA4 /* Allergy2TVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A84001F15EBF000AE9DA4 /* Allergy2TVC.swift */; };
+		CD4C7A8E1E3A517A00DE6216 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4C7A8D1E3A517A00DE6216 /* DataSource.swift */; };
+		CD5803B01F76BFFA00BEB697 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CD5803AE1F76BFFA00BEB697 /* DataModel.xcdatamodeld */; };
+		CD5AE56A1E0A01CC00668785 /* open.png in Resources */ = {isa = PBXBuildFile; fileRef = CD5AE5691E0A01CC00668785 /* open.png */; };
+		CD9C63331DFED840009304B6 /* html.png in Resources */ = {isa = PBXBuildFile; fileRef = CD9C632F1DFED840009304B6 /* html.png */; };
+		CD9C63341DFED840009304B6 /* IMG_1411.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CD9C63301DFED840009304B6 /* IMG_1411.PNG */; };
+		CD9C63351DFED840009304B6 /* IMG_1412.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CD9C63311DFED840009304B6 /* IMG_1412.PNG */; };
+		CD9C63361DFED840009304B6 /* IMG_1413.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CD9C63321DFED840009304B6 /* IMG_1413.PNG */; };
+		CDC7D04F1F09BC7400317E09 /* MoreTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC7D04E1F09BC7400317E09 /* MoreTVC.swift */; };
+		CDF6DDE81F0C0FB5003835D5 /* FlavorTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF6DDE71F0C0FB5003835D5 /* FlavorTagCell.swift */; };
+		CDFF0FD91DFDAE4500CBA201 /* app icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDFF0FD81DFDAE4500CBA201 /* app icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4905C4EC1DFCA86400AB387F /* Ben & Jerry's.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ben & Jerry's.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4905C4FE1DFCA86400AB387F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4905C5081DFCA98A00AB387F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4905C50B1DFCA98A00AB387F /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		4905C5331DFCA9A500AB387F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4905C5381DFCA9BD00AB387F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4905C53D1DFCA9E900AB387F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4905C53F1DFCAA4300AB387F /* Ben & Jerry's-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Ben & Jerry's-Bridging-Header.h"; sourceTree = "<group>"; };
+		4905C5761DFCAD9600AB387F /* CAKE ORDER FORM.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "CAKE ORDER FORM.jpg"; sourceTree = "<group>"; };
+		4905C5771DFCAD9600AB387F /* CheckMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckMark.png; sourceTree = "<group>"; };
+		4905C59E1DFCAD9600AB387F /* List Not Complete.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "List Not Complete.jpeg"; sourceTree = "<group>"; };
+		CD35B7AF1F08830D00A04D35 /* FlavorTagTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorTagTVC.swift; sourceTree = "<group>"; };
+		CD35B7B11F088A7500A04D35 /* FlavorsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorsTVC.swift; sourceTree = "<group>"; };
+		CD40470A1F0B0D9C004DAA9D /* ProgressVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressVC.swift; sourceTree = "<group>"; };
+		CD4A83F61F0C3E3900AE9DA4 /* AllergyTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllergyTVC.swift; sourceTree = "<group>"; };
+		CD4A83FA1F0D5FEC00AE9DA4 /* CateringTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CateringTVC.swift; sourceTree = "<group>"; };
+		CD4A83FC1F0D615300AE9DA4 /* CateringEditTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CateringEditTVC.swift; sourceTree = "<group>"; };
+		CD4A84001F15EBF000AE9DA4 /* Allergy2TVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Allergy2TVC.swift; sourceTree = "<group>"; };
+		CD4C7A8D1E3A517A00DE6216 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		CD5803AF1F76BFFA00BEB697 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		CD5AE5691E0A01CC00668785 /* open.png */ = {isa = PBXFileReference; explicitFileType = image.png; path = open.png; sourceTree = "<group>"; };
+		CD9C632F1DFED840009304B6 /* html.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = html.png; sourceTree = "<group>"; };
+		CD9C63301DFED840009304B6 /* IMG_1411.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1411.PNG; sourceTree = "<group>"; };
+		CD9C63311DFED840009304B6 /* IMG_1412.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1412.PNG; sourceTree = "<group>"; };
+		CD9C63321DFED840009304B6 /* IMG_1413.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1413.PNG; sourceTree = "<group>"; };
+		CDC7D04E1F09BC7400317E09 /* MoreTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTVC.swift; sourceTree = "<group>"; };
+		CDF6DDE71F0C0FB5003835D5 /* FlavorTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorTagCell.swift; sourceTree = "<group>"; };
+		CDFF0FD81DFDAE4500CBA201 /* app icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4905C4E91DFCA86400AB387F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4905C4E31DFCA86400AB387F = {
+			isa = PBXGroup;
+			children = (
+				4905C4EE1DFCA86400AB387F /* Ben & Jerry's */,
+				4905C4ED1DFCA86400AB387F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4905C4ED1DFCA86400AB387F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4905C4EC1DFCA86400AB387F /* Ben & Jerry's.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4905C4EE1DFCA86400AB387F /* Ben & Jerry's */ = {
+			isa = PBXGroup;
+			children = (
+				4905C5421DFCAD9600AB387F /* Images */,
+				4905C5FE1DFCAE7200AB387F /* Shared */,
+				4905C5FC1DFCAE6300AB387F /* TVC's */,
+				4905C5331DFCA9A500AB387F /* Main.storyboard */,
+				4905C5371DFCA9BD00AB387F /* LaunchScreen.storyboard */,
+				4905C53D1DFCA9E900AB387F /* Assets.xcassets */,
+				4905C53F1DFCAA4300AB387F /* Ben & Jerry's-Bridging-Header.h */,
+				CD5803AE1F76BFFA00BEB697 /* DataModel.xcdatamodeld */,
+				4905C4FE1DFCA86400AB387F /* Info.plist */,
+			);
+			path = "Ben & Jerry's";
+			sourceTree = "<group>";
+		};
+		4905C5421DFCAD9600AB387F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CDFD7BFA1E0054A0002E3B21 /* Misc. */,
+				CDFD7BF91E00548A002E3B21 /* App Icons */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		4905C5FC1DFCAE6300AB387F /* TVC's */ = {
+			isa = PBXGroup;
+			children = (
+				CD35B7B11F088A7500A04D35 /* FlavorsTVC.swift */,
+				CDC7D04E1F09BC7400317E09 /* MoreTVC.swift */,
+				CD4A83F61F0C3E3900AE9DA4 /* AllergyTVC.swift */,
+				CD4A84001F15EBF000AE9DA4 /* Allergy2TVC.swift */,
+				CD4A83FA1F0D5FEC00AE9DA4 /* CateringTVC.swift */,
+				CD4A83FC1F0D615300AE9DA4 /* CateringEditTVC.swift */,
+			);
+			name = "TVC's";
+			sourceTree = "<group>";
+		};
+		4905C5FE1DFCAE7200AB387F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4905C5081DFCA98A00AB387F /* AppDelegate.swift */,
+				CD35B7AF1F08830D00A04D35 /* FlavorTagTVC.swift */,
+				4905C50B1DFCA98A00AB387F /* ContentViewController.swift */,
+				CD4C7A8D1E3A517A00DE6216 /* DataSource.swift */,
+				CDF6DDE71F0C0FB5003835D5 /* FlavorTagCell.swift */,
+				CD40470A1F0B0D9C004DAA9D /* ProgressVC.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		CDFD7BF91E00548A002E3B21 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				CD9C632F1DFED840009304B6 /* html.png */,
+				CD9C63301DFED840009304B6 /* IMG_1411.PNG */,
+				CD9C63311DFED840009304B6 /* IMG_1412.PNG */,
+				CD9C63321DFED840009304B6 /* IMG_1413.PNG */,
+				CDFF0FD81DFDAE4500CBA201 /* app icon.png */,
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
+		CDFD7BFA1E0054A0002E3B21 /* Misc. */ = {
+			isa = PBXGroup;
+			children = (
+				4905C5761DFCAD9600AB387F /* CAKE ORDER FORM.jpg */,
+				CD5AE5691E0A01CC00668785 /* open.png */,
+				4905C5771DFCAD9600AB387F /* CheckMark.png */,
+				4905C59E1DFCAD9600AB387F /* List Not Complete.jpeg */,
+			);
+			name = Misc.;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4905C4EB1DFCA86400AB387F /* Ben & Jerry's */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4905C5011DFCA86400AB387F /* Build configuration list for PBXNativeTarget "Ben & Jerry's" */;
+			buildPhases = (
+				4905C4E81DFCA86400AB387F /* Sources */,
+				4905C4E91DFCA86400AB387F /* Frameworks */,
+				4905C4EA1DFCA86400AB387F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ben & Jerry's";
+			productName = "Ben & Jerry's";
+			productReference = 4905C4EC1DFCA86400AB387F /* Ben & Jerry's.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4905C4E41DFCA86400AB387F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = JohnCunniff;
+				TargetAttributes = {
+					4905C4EB1DFCA86400AB387F = {
+						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4905C4E71DFCA86400AB387F /* Build configuration list for PBXProject "Ben & Jerry's" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4905C4E31DFCA86400AB387F;
+			productRefGroup = 4905C4ED1DFCA86400AB387F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4905C4EB1DFCA86400AB387F /* Ben & Jerry's */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4905C4EA1DFCA86400AB387F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD9C63341DFED840009304B6 /* IMG_1411.PNG in Resources */,
+				4905C5351DFCA9A500AB387F /* Main.storyboard in Resources */,
+				CD5AE56A1E0A01CC00668785 /* open.png in Resources */,
+				4905C53E1DFCA9E900AB387F /* Assets.xcassets in Resources */,
+				4905C5D01DFCAD9600AB387F /* CAKE ORDER FORM.jpg in Resources */,
+				CDFF0FD91DFDAE4500CBA201 /* app icon.png in Resources */,
+				CD9C63331DFED840009304B6 /* html.png in Resources */,
+				CD9C63361DFED840009304B6 /* IMG_1413.PNG in Resources */,
+				CD9C63351DFED840009304B6 /* IMG_1412.PNG in Resources */,
+				4905C5F71DFCAD9600AB387F /* List Not Complete.jpeg in Resources */,
+				4905C53B1DFCA9BD00AB387F /* LaunchScreen.storyboard in Resources */,
+				4905C5D11DFCAD9600AB387F /* CheckMark.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4905C4E81DFCA86400AB387F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD35B7B21F088A7500A04D35 /* FlavorsTVC.swift in Sources */,
+				CDC7D04F1F09BC7400317E09 /* MoreTVC.swift in Sources */,
+				4905C5171DFCA98A00AB387F /* ContentViewController.swift in Sources */,
+				CD35B7B01F08830D00A04D35 /* FlavorTagTVC.swift in Sources */,
+				CD5803B01F76BFFA00BEB697 /* DataModel.xcdatamodeld in Sources */,
+				CD4A83FD1F0D615300AE9DA4 /* CateringEditTVC.swift in Sources */,
+				4905C5141DFCA98A00AB387F /* AppDelegate.swift in Sources */,
+				CD4A84011F15EBF000AE9DA4 /* Allergy2TVC.swift in Sources */,
+				CDF6DDE81F0C0FB5003835D5 /* FlavorTagCell.swift in Sources */,
+				CD4A83FB1F0D5FEC00AE9DA4 /* CateringTVC.swift in Sources */,
+				CD4A83F71F0C3E3900AE9DA4 /* AllergyTVC.swift in Sources */,
+				CD40470B1F0B0D9C004DAA9D /* ProgressVC.swift in Sources */,
+				CD4C7A8E1E3A517A00DE6216 /* DataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4905C5371DFCA9BD00AB387F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4905C5381DFCA9BD00AB387F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4905C4FF1DFCA86400AB387F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		4905C5001DFCA86400AB387F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_NO_COMMON_BLOCKS = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4905C5021DFCA86400AB387F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = PYV9U2YCUA;
+				INFOPLIST_FILE = "Ben & Jerry's/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "jcunniff.Ben---Jerry-s";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ben & Jerry's/Ben & Jerry's-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4905C5031DFCA86400AB387F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = PYV9U2YCUA;
+				INFOPLIST_FILE = "Ben & Jerry's/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "jcunniff.Ben---Jerry-s";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ben & Jerry's/Ben & Jerry's-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4905C4E71DFCA86400AB387F /* Build configuration list for PBXProject "Ben & Jerry's" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4905C4FF1DFCA86400AB387F /* Debug */,
+				4905C5001DFCA86400AB387F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4905C5011DFCA86400AB387F /* Build configuration list for PBXNativeTarget "Ben & Jerry's" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4905C5021DFCA86400AB387F /* Debug */,
+				4905C5031DFCA86400AB387F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CD5803AE1F76BFFA00BEB697 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CD5803AF1F76BFFA00BEB697 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = CD5803AF1F76BFFA00BEB697 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4905C4E41DFCA86400AB387F /* Project object */;
+}

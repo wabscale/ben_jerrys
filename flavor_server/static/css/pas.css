@@ -1,0 +1,85 @@
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+* {
+    /*background-color: darkgrey;*/
+    color: limegreen;
+}
+
+form {
+    color: #000;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    background-color: transparent;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.pas-section-title {
+    background-color: transparent;
+    color: limegreen;
+    text-align: center;
+}
+
+.row.content {
+    height: 550px
+}
+
+.pas-nav-item {
+    color: white;
+    background-color: grey;
+    height: 100%;
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+    background-color: grey;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.flavoritem {
+    background-color: transparent;
+    float: none;
+    color: #000;
+    /*text-align: left;*/
+}
+
+/* On small screens, set height to 'auto' for the grid */
+@media screen and (max-width: 767px) {
+    .row.content {height: auto;}
+}
