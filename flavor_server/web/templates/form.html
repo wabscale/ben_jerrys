@@ -1,0 +1,26 @@
+{% from 'bootstrap/form.html' import render_form %}
+{% macro make_form(form, form_title='', include_flash=False) %}
+    <div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+	    <div class="jumbotron">
+		<h1>{{ form_title }}</h1>
+                {% if include_flash %}
+		    {%- with messages = get_flashed_messages() %}
+		        {%- if messages %}
+			    <div class="alert alert-danger" role="alert">
+			        {% for message in messages %}
+				    {{ message }}
+			        {% endfor %}
+			    </div>
+		        {%- endif %}    
+		    {%- endwith %}
+                {% endif %}
+		{{ render_form(form) }}
+                <br/>
+                {{ note | safe }} 
+	    </div>
+	</div>
+	<div class="col-sm-4"></div>
+    </div>
+{% endmacro %}

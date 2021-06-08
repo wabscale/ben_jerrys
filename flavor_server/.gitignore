@@ -1,3 +1,5 @@
-# Created by .ignore support plugin (hsz.mobi)
-.idea
-.security
+*.jpeg
+web/static/img
+web/data/error.log
+
+

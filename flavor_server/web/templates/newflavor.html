@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div align="center">
+    <div class="col-sm-4" align="center">
+        <div class="well imgbox jumbotron">
+            <form method="post" enctype="multipart/form-data" action="/newflavor.html">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <div class="form-group">
+                    Flavor Name: <input type="text" name="flavorname">
+                </div>
+                <br>
+                <div class="form-group">
+                    Nutritional Image (.jpeg only)<input type="file" name="nutritional_img">
+                </div>
+                <div class="form-group">
+                    Flavor Tag Image (.jpeg only)<input type="file" name="tag_img">
+                </div>
+                <br>
+                Flavor Types:
+                <div class="checkbox">
+                    {% for i in flavortypes %}
+                    <input type="checkbox" name="{{i}}">{{i}}
+                    {% endfor %}
+                </div>
+                <br>
+                Allergy Types:
+                <div class="checkbox">
+                    {% for i in allergylist %}
+                     <input type="checkbox" name="{{i}}">{{i}}
+                    {% endfor %}
+                </div>
+                <br>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

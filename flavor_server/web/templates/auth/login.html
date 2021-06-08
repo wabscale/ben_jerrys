@@ -1,0 +1,30 @@
+{%- extends "base.html" %}
+
+{% block navbarleft %}{% endblock %}
+
+{% block content %}
+    <div class="row">
+	<div class="col-sm-4"></div>
+	<div class="col-sm-4">
+	    <div class="jumbotron">
+		<h1>Login</h1>
+		{%- with messages = get_flashed_messages() %}
+		    {%- if messages %}
+			<div class="alert alert-danger" role="alert">
+			    {% for message in messages %}
+				{{ message }}
+			    {% endfor %}
+			</div>
+		    {%- endif %}
+		{%- endwith %}
+		{{ render_form(form) }}
+                <br/>
+		<p>
+                    {# <a href="{{ url_for('auth.register') }}">Don't have an account?</a></p> #}
+	    </div>
+	</div>
+	<div class="col-sm-4"></div>
+    </div>
+{%- endblock %}
+
+{% block footer %}{% endblock %}

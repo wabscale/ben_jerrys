@@ -1,0 +1,71 @@
+{% from 'bootstrap/form.html' import render_form, render_field %}
+{% from 'bootstrap/nav.html' import render_nav_item %}
+{% from 'form.html' import make_form %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% block header %}
+<head>
+    {% block title %}
+    <title>Ben & Jerry's</title>
+    {% endblock %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ bootstrap.load_css() }}
+    <link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/pas.css">
+</head>
+{% endblock %}
+
+<body>
+<div class="container-fluid">
+    <div class="content" >
+            <nav class="navbar navbar-expand-sm" id="top-navbar">
+              <div class="container-fluid">
+        <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item"><a class="brand" href="/" id="index-nav">Ben & Jerry's</a></li>
+        {% block navbarleft %}
+                <li class="nav-item"><a href="/newflavor.html">New Flavor</a></li>
+                <li class="nav-item"><a href="/removeflavor.html">Remove Flavor</a></li>
+        {% endblock navbarleft %}
+        </ul>
+        {% block navbarright %}
+            <ul class="nav navbar-nav navbar-right">
+                {% if current_user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="navbar-brand">{{ current_user.name }}</a>
+                    </li>
+                    <li id="logout-nav">
+                        <a href="{{ url_for('auth.logout') }}"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a href="{{ url_for('auth.login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                {% endif %}
+            </ul>
+        {% endblock %}
+    </div>
+  </nav>
+<br>
+{% block content %}
+{% endblock %}
+    </div>
+</div>
+</body>
+
+{% block scripts %}
+{{ bootstrap.load_js() }}
+{% endblock scripts %}
+
+<footer class="footer">
+{% block footer %}
+    <div class="panel panel-default">
+        <div class="panel-body" align="center">
+            Maintained by: John Cunniff | john@bigj.icu | +1 (914) 602-9446
+        </div>
+    </div>
+{% endblock %}
+</footer>
+</html>

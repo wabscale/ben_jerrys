@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  flasq:
+    build: .
+    expose:
+      - "5000"
+    volumes:
+      - "./web/data:/flasq/web/data"
+      - "./web/static:/flasq/web/static"
+      - "./FlavorData.json:/flasq/FlavorData.json"
+      - "/var/lib/flavor-server/img:/flasq/web/static/img"
+    environment:
+      - "WORKERS=1"
+      - "PORT=5000"
+      - "SITENAME=default"
+    labels:
+      - "traefik.enable=true"
+
+      - "traefik.http.routers.flavor-server-http.rule=Host(`icecream.mazuera.art`)"
+      - "traefik.http.routers.flavor-server-http.entrypoints=http"
+      - "traefik.http.routers.flavor-server-http.middlewares=redirect"
+
+      - "traefik.http.routers.flavor-server.rule=Host(`icecream.mazuera.art`)"
+      - "traefik.http.routers.flavor-server.entrypoints=https"
+      - "traefik.http.routers.flavor-server.tls.certresolver=tls"
+      - "traefik.http.services.flavor-server.loadbalancer.server.port=5000"
+      - "traefik.http.middlewares.flavor-server.redirectscheme.scheme=https"
+    networks:
+      - traefik-proxy
+
+networks:
+  traefik-proxy:
+    external:
+      name: traefik-proxy

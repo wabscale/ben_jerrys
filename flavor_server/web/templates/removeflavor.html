@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div align="center">
+    <div class="col-sm-4" align="center">
+        <div class="well imgbox">
+            <form method="post" action="/removeflavor.html">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+                <select name="flavorname">
+                    {% for flavorname in flavornames %}
+                        <option value="{{ flavorname }}">{{ flavorname }}</option>
+                    {% endfor %}
+                </select>
+                <input type="submit" style="color: black">
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

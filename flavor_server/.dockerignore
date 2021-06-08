@@ -1,0 +1,6 @@
+*.db
+README.md
+base
+web/data
+web/static
+FlavorData.json
