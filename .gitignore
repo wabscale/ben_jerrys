@@ -9,3 +9,4 @@ build
 ._*.png
 ._*.jpeg
 ._*
+__pycache__

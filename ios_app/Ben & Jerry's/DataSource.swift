@@ -37,7 +37,7 @@ class DataSource {
     }
     
     func getHost() -> String {
-        return self.fetchCoreData("Data_Source_Data").first?.value(forKey: "host") as? String ?? "http://jcmbp.local:8010"
+        return self.fetchCoreData("Data_Source_Data").first?.value(forKey: "host") as? String ?? "https://icecream.mazuera.art"
     }
     
     func sendHTTPRequest(url: String, path: String, completionHanler: @escaping (Data?, URLResponse?, Error?) -> Void) {
